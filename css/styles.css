@@ -170,7 +170,6 @@ body{
     border-radius: 4px;
     border: hidden;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) scale(0.2);
-    
     }
     
 .hero-button:focus {
@@ -982,6 +981,7 @@ ul{
 .input-item:hover,
 .input-item:focus{
     border-color: var(--accent-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .icon-item{
@@ -1009,6 +1009,7 @@ ul{
 .input-item-text:hover,
 .input-item-text:focus{
     border-color: var(--accent-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .terms-condition{
@@ -1032,7 +1033,9 @@ ul{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: var(--secont-title-text-color);
-    border: none;
+    border: hidden;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) scale(0.2);
+    cursor: pointer;
 }
 
 .terms-link{
