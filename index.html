@@ -78,6 +78,50 @@
 
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
+                        <div class="conteiner-modal">
+                            <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+                            <form action="">
+                            <div class="form-item">
+                                <label class="label-item" for="name">Имя</label>
+                                <input class="input-item" type="name" id="name" checked>
+                                <svg class="icon-item">
+                                    <use href="./images/symbol-defs.svg#icon-man"></use>
+                                </svg>
+                            </div>
+
+                            <div class="form-item">
+                                <label class="label-item" for="tel">Телефон</label>
+                                <input class="input-item" type="tel" id="tel">
+                                <svg class="icon-item">
+                                    <use href="./images/symbol-defs.svg#icon-tel"></use>
+                                </svg>
+                            </div>
+
+                            <div class="form-item">
+                                <label class="label-item" for="email">Почта</label>
+                                <input class="input-item" type="email" id="email">
+                                <svg class="icon-item">
+                                    <use href="./images/symbol-defs.svg#icon-mail"></use>
+                                </svg>
+                            </div>
+
+                            <div class="form-item">
+                                <label class="label-item" for="user-comment">Комментарий</label>
+                                <textarea class="input-item-text" id="user-comment" name="user-comment" rows="10"
+                                    placeholder="Введите текст"></textarea>
+                            </div>
+
+                            <div class="terms-condition">
+                                <input id="terms-condition" type="checkbox" name="terms-condition">
+                                <label for="terms-condition">Соглашаюсь с рассылкой и принимаю <span ><a class="terms-link" href="">Условия договора</a></span></label>  
+                            </div>
+                            </form>
+
+                            <div>
+                                <button class="submit-button" type="submit">ОТПРАВИТЬ</button>
+                            </div>
+
+                        </div>
                         <button type="button" data-modal-close class="modal-close-button">
                             <svg class="icon-close">
                                 <use href="./images/symbol-defs.svg#icon-vector"></use>
@@ -425,7 +469,7 @@
 
                     <form class="form-footer">
                     <b class="form-footer-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
-                        <div class="for-fun">
+                        <div class="form-footer-conteiner">
                             <label for="email" name="email"></label>
                                 <input class="form-footer-input" type="email" name="email" id="email" placeholder="E-mail" autocomplete="none"></input>
                                 <button class="form-footer-button" type="submit">ПОДПИСАТЬСЯ</button>
