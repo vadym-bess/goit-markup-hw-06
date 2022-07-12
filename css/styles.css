@@ -855,6 +855,11 @@ ul{
     fill: #000000;
 }
 
+.icon-close:hover,
+.icon-close:focus{
+    fill: var(--accent-color);
+}
+
 .form-footer{
     display: block;
     margin-left: 93px;
@@ -971,6 +976,12 @@ ul{
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    color: var(--title-text-color);
+}
+
+.input-item:hover,
+.input-item:focus{
+    border-color: var(--accent-color);
 }
 
 .icon-item{
@@ -980,6 +991,7 @@ ul{
     top: 57%;
     left: 15px;
     transform: translateY(-50%);
+    
 
 }
 
@@ -991,10 +1003,26 @@ ul{
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    color: var(--title-text-color);
+}
+
+.input-item-text:hover,
+.input-item-text:focus{
+    border-color: var(--accent-color);
 }
 
 .terms-condition{
     margin-bottom: 30px;
+}
+
+.terms-condition-text{
+    font-family: 'Roboto' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
 }
 
 .submit-button{
