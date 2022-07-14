@@ -961,7 +961,6 @@ ul{
 }
 
 .form-item{
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -971,7 +970,7 @@ ul{
     display: flex;
     padding-left: 0;
     margin-bottom: 4px;
-    font-family: 'Roboto';
+    font-family: 'Roboto' sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -980,9 +979,18 @@ ul{
     color: #757575;
 }
 
-.input-item{
+.input-inner{
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: var(--title-text-color);
     padding-left: 40px;
     padding-right: 20px;
+}
+
+.input-item{
+    position: relative;
+    display: flex;
     margin-bottom: 10px;
     width: 448px;
     height: 40px;
@@ -999,13 +1007,18 @@ ul{
 
 .icon-item{
     position: absolute;
+    top:0;
+    left:0;
     width: 12px;
     height: 12px;
-    top: 57%;
+    top: 50%;
     left: 15px;
     transform: translateY(-50%);
-    
+}
 
+.icon-item:hover + .input-item,
+.icon-item:focus + .input-item{
+    fill: var(--accent-color);
 }
 
 .input-item-text{
