@@ -788,6 +788,7 @@ ul{
 .footer-main{
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
 }
 
 .footer-one{
@@ -871,7 +872,7 @@ ul{
 }
 
 .form-footer-title{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-family: 'Roboto' sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -883,16 +884,12 @@ ul{
 }
 
 .form-footer-input{
-    margin-top: 20px;
     width: 358px;
     height: 50px;
     background: var(--secondary-section-background);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-}
-
-.form-footer-input{
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 15px;
@@ -950,8 +947,13 @@ ul{
     width: 24px;
     height: 24px;
     right: 18px;
-    top: 32px;
+    top: 50%;
+    transform: translateY(-50%);
       
+}
+
+.form-footer{
+    margin-right: 0;
 }
 
 .form-footer-conteiner{
