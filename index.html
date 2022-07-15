@@ -107,8 +107,8 @@
                             <div class="form-item">
                                 <label class="label-item" for="email">Почта</label>
                                 <div class="input-item">
-                                    <input class="input-inner" type="email" id="email" required>
-                                    <svg class="icon-item">
+                                        <input class="input-inner" type="email" id="email" required>
+                                     <svg class="icon-item">
                                         <use href="./images/symbol-defs.svg#icon-mail"></use>
                                     </svg>
                                 </div>
@@ -122,8 +122,16 @@
                             </div>
 
                             <div class="terms-condition">
-                                <input id="terms-condition" type="checkbox" name="terms-condition">
-                                <label class="terms-condition-text" for="terms-condition">Соглашаюсь с рассылкой и принимаю <span ><a class="terms-link" href="">Условия договора</a></span></label>  
+                                <div class="terms-condition-inner">
+                                    <div class="check-box-control">
+                                    <input class="terms-condition-input visually-hidden" id="terms-condition" type="checkbox" name="terms-condition">
+                                    </div>
+                                    <label class="terms-condition-text" for="terms-condition">Соглашаюсь с рассылкой и принимаю <span><a class="terms-link"
+                                                href="">Условия договора</a></span></label>
+                                    <svg class="terms-condition-icon">
+                                        <use href="./images/symbol-defs.svg#icon-check"></use>
+                                    </svg>
+                                </div>   
                             </div>
                             </form>
 
