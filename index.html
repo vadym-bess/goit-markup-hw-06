@@ -84,7 +84,13 @@
 
                             <div class="form-item">
                                 <label class="label-item" for="name">Имя</label>
-                                <div class="input-item"><input class="input-inner" type="name" id="name" checked required>
+                                <div class="input-item"><input class="input-inner" 
+                                    type="name" 
+                                    id="name" 
+                                    checked 
+                                    required   
+                                    pattern="^[а-я А-Я]+\s[а-я А-Я]+$" 
+                                    pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$">
                                     <svg class="icon-item">
                                         <use href="./images/symbol-defs.svg#icon-man"></use>
                                     </svg>
