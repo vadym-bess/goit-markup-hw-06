@@ -80,17 +80,11 @@
                     <div class="modal">
                         <div class="conteiner-modal">
                             <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-                            <form action="">
 
+                            <form>
                             <div class="form-item">
-                                <label class="label-item" for="name">Имя</label>
-                                <div class="input-item "><input class="input-inner" 
-                                    type="name" 
-                                    id="name" 
-                                    checked 
-                                    required   
-                                    pattern="^[а-я А-Я]+\s[а-я А-Я]+$" 
-                                    pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$">
+                                <label class="label-item" for="username">Имя</label>
+                                <div class="input-item "><input class="input-inner" type="text" name="username" id="username">
                                     <svg class="icon-item human">
                                         <use href="./images/symbol-defs.svg#icon-man"></use>
                                     </svg>
@@ -102,7 +96,7 @@
                             <div class="form-item">
                                 <label class="label-item" for="tel">Телефон</label>
                                 <div class="input-item">
-                                    <input class="input-inner" type="tel" id="tel" required>
+                                    <input class="input-inner" type="tel" id="tel">
                                     <svg class="icon-item telephone">
                                         <use href="./images/symbol-defs.svg#icon-tel"></use>
                                     </svg>
@@ -113,7 +107,7 @@
                             <div class="form-item">
                                 <label class="label-item" for="email">Почта</label>
                                 <div class="input-item">
-                                        <input class="input-inner" type="email" id="email" required>
+                                        <input class="input-inner" type="email" id="email">
                                      <svg class="icon-item envelope">
                                         <use href="./images/symbol-defs.svg#icon-mail"></use>
                                     </svg>
@@ -491,9 +485,9 @@
 
                     <form class="form-footer">
                     <p class="form-footer-title">подпишитесь на рассылку</p>
+                    <label for="mail"></label>
                         <div class="form-footer-conteiner">
-                            <label for="email" name="email"></label>
-                                <input class="form-footer-input" type="email" name="email" id="email" placeholder="E-mail" autocomplete="none" required></input>
+                                <input class="form-footer-input" type="email" name="mail" id="mail" placeholder="E-mail" required>
                                 <button class="form-footer-button" type="submit">ПОДПИСАТЬСЯ</button>
                                 <svg class="footer-icon-send">
                                     <use href="./images/symbol-defs.svg#icon-icon-send"></use>
