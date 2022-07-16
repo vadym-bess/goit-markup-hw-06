@@ -868,7 +868,8 @@ ul{
 
 .form-footer{
     display: block;
-    margin-left: 93px;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .form-footer-title{
@@ -953,7 +954,7 @@ ul{
 }
 
 .form-footer{
-    margin-right: 0;
+    
 }
 
 .form-footer-conteiner{
@@ -987,7 +988,7 @@ ul{
     display: flex;
     align-items: center;
     position: absolute;
-    margin-top: 3px;
+    left: 0;
     width: 16px;
     height: 15px;
     background-color: var(--fill-socials);
@@ -1129,7 +1130,12 @@ ul{
 }
 
 .terms-condition-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+
+
 }
 
 .terms-condition-input:focus-visible ~ .terms-condition-icon{
